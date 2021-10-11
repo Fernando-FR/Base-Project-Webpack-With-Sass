@@ -1,17 +1,29 @@
 {
-  "name": "PortfolioTest",
+  "name": "Webpack",
   "version": "1.0.0",
   "description": "",
   "private": true,
   "scripts": {
     "watch": "webpack -w"
   },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "last 2 version",
+    "not dead",
+    "iOS >= 9"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.3.7",
     "css-loader": "^6.4.0",
     "mini-css-extract-plugin": "^2.4.2",
+    "postcss-loader": "^6.1.1",
     "sass": "^1.42.1",
     "sass-loader": "^12.1.0",
     "webpack": "^5.58.1",
